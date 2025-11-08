@@ -1,0 +1,37 @@
+@"
+# Arduino build artifacts
+*.bin
+*.hex
+*.elf
+*.eep
+*.map
+*.lst
+*.o
+*.d
+build/
+**/build/
+
+# Arduino CLI/IDE temp
+arduino-sketch-*
+*.ino.cpp
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+.pio/libdeps/
+.pio/build/
+
+# VS Code
+.vscode/
+.vscode/ipch/
+.vscode/.browse.VC.db
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+"@ | Set-Content -Path .gitignore -Encoding UTF8
